@@ -1,0 +1,27 @@
+{
+  "name": "rss-backend",
+  "version": "0.1.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MityaDementiy/rss-backend.git"
+  },
+  "keywords": [
+    "express",
+    "docker",
+    "node.js"
+  ],
+  "author": "Mitya Dementiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MityaDementiy/rss-backend/issues"
+  },
+  "homepage": "https://github.com/MityaDementiy/rss-backend#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
