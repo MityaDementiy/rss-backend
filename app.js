@@ -1,10 +1,13 @@
 import express from 'express';
+import cors from 'cors';
 
 import channelsRouter from './src/routes/channels.js';
 
 const app = express();
 
 const port = process.env.PORT ?? 8080;
+
+app.use('/api', cors());
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
