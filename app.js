@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 
+import connectDB from './config/db.js';
 import channelsRouter from './src/routes/channels.js';
 
 const app = express();
@@ -15,6 +16,8 @@ app.get('/', (req, res) => {
 
 app.use(express.json());
 app.use('/api', channelsRouter);
+
+connectDB();
 
 app.listen(port, () => {
   // eslint-disable-next-line no-console
