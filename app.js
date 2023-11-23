@@ -3,7 +3,6 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 
 import connectDB from './config/db.js';
-import channelsRouter from './src/routes/channels.js';
 import usersRouter from './src/routes/users.js';
 
 const app = express();
@@ -19,7 +18,6 @@ app.get('/', (req, res) => {
 });
 
 app.use(express.json());
-app.use('/api', channelsRouter);
 app.use('/api', usersRouter);
 
 connectDB();
