@@ -9,7 +9,6 @@
     "docker-build": "docker build -t rss-backend .",
     "docker-run": "docker run -p 8080:8080 rss-backend",
     "lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },
   "repository": {
